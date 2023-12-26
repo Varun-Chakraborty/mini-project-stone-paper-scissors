@@ -26,6 +26,12 @@ main{
     display: flex;
 }
 
+@media screen and (max-width: 450px) { 
+    .choices{
+        flex-direction: column;
+    }
+}
+
 .choices>div{
     margin: 1rem 2rem;
     height: 150px;
@@ -36,6 +42,13 @@ main{
     justify-content: center;
     align-items: center;
     transition: all .4s;
+}
+
+@media screen and (max-width: 600px) { 
+    .choices>div{
+        height: 100px;
+        width: 100px;
+    }
 }
 
 .choices>div>img{
@@ -64,6 +77,12 @@ main{
 
 .score>div>.number{
     font-size: 4rem;
+}
+
+@media screen and (max-width: 600px) { 
+    .score>div>.number{
+        font-size: 3rem;
+    }
 }
 
 .message{
